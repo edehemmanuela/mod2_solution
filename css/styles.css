@@ -1,0 +1,155 @@
+body{
+  background-color: grey;
+
+}
+h1{
+  text-align:center;
+}
+.col-lg-1 ,.col-lg-2,.col-lg-3{
+  background: #cdcdcd;
+  max-height: 450px;
+  border: 2px solid #000;
+  padding-left: 10px;
+}
+
+.preheading1,.preheading2,.preheading3{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  background-color: #cdcdcd;
+}
+
+
+
+.heading1,.heading2,.heading3  {
+  color: #fff;
+  background: red;
+  border: 2px solid #000;
+  font-weight: 600;
+  padding: 5px 10px;
+  font-size: 24px;
+}
+div .content1,.content2,.content3{
+  font-size: 15px;
+
+}
+.row{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+
+}
+
+ /* for large device */
+ @media only screen and (min-width: 992px) {
+   .row {
+    .col-lg-1,.col-lg-2,.col-lg-3{
+      /* float: left; */
+      border: 1px solid green;
+
+
+    }
+    .col-lg-1{
+      width: 33.33%;
+      background-color: maroon;
+    }
+    .col-lg-2{
+      width: 33.33%;
+      background-color: blueviolet;
+    }
+    .col-lg-3{
+      width: 33.33%;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    }
+  }
+}
+ /* for medium device  */
+
+
+  @media only screen and (min-width:768px) and (max-width :991px){
+    .col-lg-1{
+    background-color:magenta;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    position: relative;
+    height: 150px;
+    }
+    .col-lg-2{
+      display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 150px;
+    background-color: springgreen;
+    }
+
+    .col-lg-3{
+     /* height: 150px; */
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: mediumseagreen;
+    flex-wrap: wrap;
+
+    float:left;
+    width: 100%;
+    position: absolute;
+     right:-5px;
+    bottom: -20px;
+    left: -5px;
+    height: 150px;
+    margin-bottom: 200px;
+    margin-top: 5px;
+    margin-left: 15px;
+
+    }
+
+
+}
+   /* for mobile screen */
+   @media only screen and (max-width:767px) {
+    .row{
+      width: 100%;
+      height: 150px;
+      position: absolute;
+      margin-bottom: 10px;
+    }
+
+
+     .col-lg-1{
+     position: absolute;
+     top: 25px;
+
+     width: 100%;
+     margin-bottom: 50px;
+     background-color: mediumseagreen;
+
+     }
+
+
+     .col-lg-2{
+      position: absolute;
+      top: 150px;
+      width:100%;
+      margin-top: 5px;
+      background-color: darkviolet;
+     }
+     .col-lg-3{
+      position: absolute;
+      top:250px;
+
+      width: 100%;
+      background-color: blanchedalmond;
+      margin-top: 25px;
+     }
+
+    }
+  }
